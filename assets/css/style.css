@@ -1,4 +1,7 @@
-/*Portfolio - main page with about me*/
+/*Portfolio Responsive design with media tags 
+  CSS file*/
+
+
 body {
   
   font-size: 18px;
@@ -13,6 +16,7 @@ body {
   box-sizing: border-box;
   }
 
+  /*container wraps content into rows*/
 .container {
   clear: both;
   overflow:auto;
@@ -29,7 +33,7 @@ h1, h2, h3 {
   }
 
 
-
+/*Header is container for name and nav menu*/
 header {
   position: fixed;
    float: none;
@@ -44,6 +48,7 @@ header {
   /*border-bottom: 2px solid #ccc;*/
 }
 
+/*h1 is the name header*/
 h1 {
   width:22%;
   float: left;
@@ -58,7 +63,7 @@ h1 {
 } 
 
 
-
+/*container for navaigation menu*/
 nav {
     float:right;
     color: #777777;
@@ -66,7 +71,7 @@ nav {
        
 }
 
-
+/*menu options in navigation menu*/
 nav a {
   display:inline-block;
   text-decoration: none;
@@ -84,16 +89,16 @@ nav a:hover {
 }
 
 
-
+/*eliminated divider line after last nav option*/
 nav a:last-child {
     border-right: none;
     }
 
 
 
-
+/*container for the main section that includes all the content*/
 #center-background {
-  /*padding-top: 10%;*/
+ 
   overflow:auto;
 
    padding: 15px;
@@ -176,7 +181,7 @@ h3 {
   float: left;
   margin-left: 2%;
   margin-right: 10px;
-    padding: 1%;
+  padding: 1%;
 
 }
 
@@ -298,6 +303,7 @@ footer {
 
 
 @media screen and (max-width: 980px) {
+  header {background-color: blue;}
  
   .container {
     width: 100%;
@@ -315,16 +321,15 @@ footer {
      width: 25%;
  }
   
-
+  #content {
+    /**/
+  }
   #connect {
+
     margin-right: 5px;
     width: 30%;
     }
 
-  #center-background {
-   padding: 15px;
-  
-  }
 
   #description {
     text-align: center;
@@ -337,18 +342,32 @@ footer {
     width: 100%;
     margin: 10px auto 5px auto;
     padding: 5% 10% 5% 10%;
+  }
 
-}
+  .projects {
+    width: 100%;
+  }
+
+/*.project-image {
+  clear: both;
+  width: 100%;
+  
+}*/ 
+
 }
 
 
 
 @media screen and (max-width: 768px) {
-.container {
-  max-width: 768px;
-  padding-top: 10px;
 
-  }
+ header {background-color: red;
+         }
+ 
+  .container {
+    max-width: 768px;
+    padding-top: 10px;
+
+    }
 
   h1 {
      font-size: 20px;
@@ -365,9 +384,7 @@ footer {
 
   #content {
     max-width:100%;
-
-          
-}
+  }
 
 
   #connect {
@@ -396,13 +413,34 @@ footer {
   margin: 10px 5px 5px 5px;
   margin-right: 10px;
   padding: 1%;
-*/
+  }
+
+
+  .projects {
+  width: 40%;
+  margin: 10px 5px 5px 5px;
+  margin-right: 10px;
+  padding: 1%;
+  }
+
+  .label {
+  
+  bottom: 10px;
+  width: 80%;
+ 
+  }
+
 }
-}
+
+
+
   
 @media screen and (max-width: 640px){
  
-  .container {
+   header {background-color: green;
+           position: static;}
+ 
+ .container {
     max-width: 640px;
   }
 
@@ -421,7 +459,7 @@ footer {
     margin: 0 auto 0 auto;
     font-size: 20px;
     text-align: center;
-}
+  }
 
 
   nav a {
@@ -446,4 +484,19 @@ footer {
     width: 100%;
     margin: 10px auto 5px auto;
     
+  }
+
+  .projects {
+    width: 100%; 
+    padding: 5% 10% 5% 10%;
+    margin: 10px auto 5px auto;
+ 
+  }
+  .label {
+  
+  bottom: 10px;
+  width: 80%;
+ 
+}
+
 }

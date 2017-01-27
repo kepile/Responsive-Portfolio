@@ -1,60 +1,83 @@
-<!-- STUDENTS: Head to float.css for your assignment -->
+<!--  Responsive Portfolio Homework with media tag
+      Conact page in Bio website -->
 <!DOCTYPE html>
+
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
+
   <title>Kathy</title>
+
   <link rel="stylesheet" type="text/css" href="reset.css">
+
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
   <header>
-    <ul>
-      <li><a href="contact.html"> Contact </a></li>
-      <li><a href="portfolio.html"> Portfolio </a></li>
-      <li><a href="index.html"> About </a></li>
-    </ul>
-    <h1> Kathy Pile </h1>
+  
+    <div class="container">
+
+      <h1> Kathy Pile </h1>
+
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     
+    </div>
   </header>
 
-<section id = "background">
- 
-  <section id="connect">
-   <h2> Connect with Me </h2>
-      <div id = "push-down">
-         <a href ="https://github.com/kepile" target="_blank"> 
-             <img class ="logo" src="assets/images/github_square_black-128.png" alt="git"> </a>
-         <a href = "https://www.linkedin.com/home?trk=nav_responsive_tab_home" 
-             target="_blank"> 
-             <img class="logo" src="assets/images/social-linkedin-square2-128.png"   alt="Linked in"> </a>
-         <a href = "http://stackoverflow.com/users/7325947/k-pile"
-             target="_blank"> 
-             <img class="logo" src="assets/images/Stack_Overflow-128.png" alt="Overflow"></a>
+<div class ="sticky-wrap">
+
+  <div id = "center-background" class = "container">
+   
+    <section id="content">
+       
+      <h3>Contact</h3>
+
+      <div>
+        <form autocomplete="on">
+          Name: <input type="text"  placeholder="John Smith" name="contact-name">
+          Email: <input type="email" placeholder="example@gmail.com" name="contact-email">
+          Message: <textarea id= "message" name="contact-message" rows = 4>
+                   </textarea>
+        
+          <input type="submit" value="Submit">
+        </form>
       </div>
-  </section>
 
-  <section id="content">
-     
-     <h3>Contact</h3>
+    </section>
 
-  <div>
-    <form autocomplete="on">
-      Name: <input type="text"  placeholder="John Smith" name="contact-name">
-      Email: <input type="email" placeholder="example@gmail.com" name="contact-email">
-      Message: <textarea id= "message" name="contact-message" rows = 4>
-               </textarea>
-    
-      <input type="submit" value="Submit">
-    </form>
+    <section id="connect">
+ 
+       <h2> Connect with Me </h2>
+ 
+        <div id = "push-down">
+
+           <a href ="https://github.com/kepile" target="_blank"> 
+               <img class ="logo" src="assets/images/github_square_black-128.png" alt="git"> </a>
+           <a href = "https://www.linkedin.com/home?trk=nav_responsive_tab_home" 
+               target="_blank"> 
+               <img class="logo" src="assets/images/social-linkedin-square2-128.png"   alt="Linked in"> </a>
+           <a href = "http://stackoverflow.com/users/7325947/k-pile"
+               target="_blank"> 
+               <img class="logo" src="assets/images/Stack_Overflow-128.png" alt="Overflow"></a>
+
+        </div>
+
+    </section>
+
   </div>
 
-   </section>
+  <div class="push-footer"></div>
 
-</section>
+</div>
 
 
   <footer>
