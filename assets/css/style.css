@@ -1,0 +1,449 @@
+/*Portfolio - main page with about me*/
+body {
+  
+  font-size: 18px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #777777;
+   background-image: url(../images/bright_squares_@2X.png);
+   border: 1px solid #cccccc;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+.container {
+  clear: both;
+  overflow:auto;
+  
+  margin: 0px auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+h1, h2, h3 {
+   font-family: 'Georgia', Times, 'Times New Roman', serif;
+   font-weight: 700;
+    font-size: 30px;
+  }
+
+
+
+header {
+  position: fixed;
+   float: none;
+  position:static;
+  z-index: 99;
+  margin-bottom: 0;
+  /*margin: 0 0 30px;*/
+  overflow: auto;
+  width: 100%;
+  color: #fff;
+  background: #fff;
+  /*border-bottom: 2px solid #ccc;*/
+}
+
+h1 {
+  width:22%;
+  float: left;
+  /*clear: none;*/
+  background-color:  #4aaaa5;
+  display: inline;
+  color: #ffffff;
+  margin-left: 20px;
+  padding: 2%;
+  
+
+} 
+
+
+
+nav {
+    float:right;
+    color: #777777;
+    margin: 2%;
+       
+}
+
+
+nav a {
+  display:inline-block;
+  text-decoration: none;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #b0c0d6;
+  color: #777777;
+  
+  
+}
+
+
+nav a:hover {
+  background-color: #4aaaa5;
+}
+
+
+
+nav a:last-child {
+    border-right: none;
+    }
+
+
+
+
+#center-background {
+  /*padding-top: 10%;*/
+  overflow:auto;
+
+   padding: 15px;
+
+    }
+
+
+#connect {
+  float: right;
+  /*position:relative;
+  overflow: auto;*/
+  right: 10px;
+  /*left:;*/
+  width: 28%;
+  padding: 0 1% 0 1%;
+  text-align: center;
+  background: #ffffff;
+  color: #4aaaa5;
+  border: 2px solid #dddddd;
+
+}
+
+
+h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #bbb;
+  
+}
+
+
+#push-down {
+  clear: both;
+  border-bottom: none;
+}
+
+.logo {
+  text-decoration: none;
+  width: 20%;
+  margin: 5%;
+}
+
+.logo:hover  {
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+#content {
+  clear: none;
+  float: left;
+  max-width: 68%;
+  height: 100%;
+  border: 2px solid #dddddd;
+  background:  #ffffff;
+  text-align: left;
+  padding: 3%; 
+  margin: 0 0 3% 0;
+  overflow: auto; 
+}
+
+
+h3 {
+   color: #4aaaa5;
+  text-align: left;
+  border-bottom: 1px solid #bbb;
+    
+
+}
+
+#description {
+  margin-top: 5px;
+  text-align: left;
+   }
+
+
+#portrait {
+
+  float: left;
+  margin-left: 2%;
+  margin-right: 10px;
+    padding: 1%;
+
+}
+
+.projects {
+width: 40%;
+position: relative; 
+float: left;
+ margin: 0 10px 10px 5%;
+
+}
+
+.project-image {
+  clear: both;
+  width: 100%;
+  float: left;
+   
+}
+
+.project-image:hover {
+  height: 110%;
+  width: 110%;
+ 
+}
+
+.label {
+  position:  absolute;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4aaaa5;
+  bottom: 5px;
+  width: 100%;
+  padding: 5% 0;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+#message  {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+
+}
+input:hover  {
+  background-color: lightblue;
+}
+
+#message:hover  {
+  background-color: lightblue;
+}
+input[type=submit] {
+    background-color: #4aaaa5;
+    border: none;
+    color: #ffffff;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.sticky-wrap {
+   min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -30px; 
+}
+
+
+.push-footer, footer {
+   height: 30px;
+
+}
+
+footer {
+  /*padding: 5px;*/
+  background: #666666; 
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  /*padding: 3% 0 3% 0;*/
+  border-top: 5px solid #4aaaa5;
+
+}
+
+#small-logo {
+
+  border-bottom: none;
+  width: 1%;
+  
+}
+
+
+@media screen and (max-width: 980px) {
+ 
+  .container {
+    width: 100%;
+    max-width: 960px;
+    }
+
+  h1 h2 h3{
+     font-size: 20px;
+     margin-left:10%;
+     font-weight: 700;
+ }
+
+ h1 {
+     margin-left:30px;
+     width: 25%;
+ }
+  
+
+  #connect {
+    margin-right: 5px;
+    width: 30%;
+    }
+
+  #center-background {
+   padding: 15px;
+  
+  }
+
+  #description {
+    text-align: center;
+   
+  }
+
+
+  #portrait {
+    float: none;
+    width: 100%;
+    margin: 10px auto 5px auto;
+    padding: 5% 10% 5% 10%;
+
+}
+}
+
+
+
+@media screen and (max-width: 768px) {
+.container {
+  max-width: 768px;
+  padding-top: 10px;
+
+  }
+
+  h1 {
+     font-size: 20px;
+     margin-left:10%;
+     font-weight: 700;
+     /*width: 250px;*/
+  }
+  
+  #center-background {
+   max-width: 90%;
+
+  }
+
+
+  #content {
+    max-width:100%;
+
+          
+}
+
+
+  #connect {
+    float: none;
+    position:static;
+    overflow: auto;
+    width: 100%;
+    
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  .logo {
+    width: 5%;
+    margin: 1%;
+    padding: 2px;
+    float:left;
+  }
+
+  #portrait {
+
+  float: left;
+  width: auto;
+  margin: 10px 5px 5px 5px;
+  margin-right: 10px;
+  padding: 1%;
+*/
+}
+}
+  
+@media screen and (max-width: 640px){
+ 
+  .container {
+    max-width: 640px;
+  }
+
+  h1 {
+     font-size: 30px;
+     text-align: center;
+     margin-left: 0;
+     width:100%;
+  }
+
+  nav {
+   
+   display: inline-block;
+    color: #777777;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+  nav a {
+    margin-right: 15px;
+    padding-right: 20px;
+    line-height: 25px;
+  }
+
+  #description {
+    text-align: center;   
+  }
+
+  #center-background {
+    float: none;
+    position:static;
+    max-width: 90%;
+  }
+
+  #portrait {
+    padding: 5% 10% 5% 10%;
+    float: none;
+    width: 100%;
+    margin: 10px auto 5px auto;
+    
+}
